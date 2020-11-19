@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<p>Hiển thị dãy Fibonacci </p>
+<input type="text" placeholder="Nhập 1 số bất kỳ" id="number">
+<input type="button" value="Check Prime" onclick="disPlay();">
+<p id="result"></p>
+<script>
+    let fibo = [];
+    fibo[0] = 0;
+    fibo[1] = 1;
+    for (i=2; i<=20; i++){
+        fibo[i] = fibo[i-1]+fibo[i-2];
+    }
+    document.write(fibo);
+</script>
+</body>
+</html>

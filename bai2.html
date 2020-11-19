@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thừa</title>
+</head>
+<body>
+<p>Tính giai thừa</p>
+<input type="text" placeholder="input number!" id="number">
+<input type="button" onclick="disPlay();" value="Click here!!">
+<p id="result"></p>
+<script>
+    function disPlay() {
+        let n = +document.getElementById('number').value;
+        let factorial = 1;
+        if (n < 0){
+            document.getElementById('result').innerHTML = "Input again";
+        }
+        if (n == 0) {
+            document.getElementById('result').innerHTML = "1";
+        }
+        for (let i = 1; i <= n; i++) {
+            factorial *= i;
+            document.getElementById('result').innerHTML = factorial;
+        }
+    }
+</script>
+</body>
+</html>

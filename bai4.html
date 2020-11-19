@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draw Rectangular</title>
+</head>
+<body>
+<script>
+    function printRactangle(w,h) {
+        let result = '';
+        for (let i = 1; i<=h; i++) {
+            for ( let j = 1; j<=w; j++) {
+                if ( i == 1 || i == h ) {
+                    result += '*';
+                } else {
+                    if ( j == 1 || j == w) {
+                        result += '*';
+                    } else {
+                        result += '&nbsp&nbsp;';
+                    }
+                }
+
+            }
+            result += '<br/>'
+        }
+        document.write(result);
+    }
+    printRactangle(20,5);
+</script>
+</body>
+</html>
